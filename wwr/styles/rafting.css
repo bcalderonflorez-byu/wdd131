@@ -186,7 +186,12 @@ article {
 .adventure-section h2 {
   text-align: center;
   color: #fff;
-  ;
+}
+
+.adventure {
+    background-color: var(--secondary-color);
+    margin-top: 40px;
+    padding: 20px;
 }
 
 .adventure .gallery {
@@ -201,9 +206,10 @@ article {
 }
 
 .adventure h2 {
+  font-family: var(--heading-font);
+  color: #fff;
   text-align: center;
-  font-size: 2rem;
-  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .adventure img {
