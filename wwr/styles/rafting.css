@@ -145,7 +145,8 @@ article {
   background-color: var(--secondary-color);
   margin-top: 40px;
   padding: 20px;
-
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .history h2 {
@@ -192,6 +193,8 @@ article {
     background-color: var(--secondary-color);
     margin-top: 40px;
     padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .adventure .gallery {
