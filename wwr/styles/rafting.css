@@ -228,6 +228,10 @@ article {
 
 footer {
   background-color: var(--accent1-color);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  justify-content:center;
 }
 
 .footer {
@@ -245,5 +249,5 @@ footer {
 
 footer p {
   color: #fff;
-  ;
+  margin-left: 250px;
 }
