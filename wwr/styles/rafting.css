@@ -1,7 +1,7 @@
 :root {
   --primary-color: #467291;
   --secondary-color: #625D36;
-  --accent1-color: #249F99;
+  --accent1-color: #125451;
   --accent2-color: #6CB46C;
   --heading-font: "Montserrat";
   --body-font: "Libertinus Sans ";
@@ -254,3 +254,173 @@ footer p {
   color: #fff;
   margin-left: 250px;
 }
+
+
+
+/* CONTACT US SECTION */
+
+.contact-heading{
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: var(--heading-font);
+}
+.contact-heading::first-letter{
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+.contact-us{
+  background-color: #aeb3b23f;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;  
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.contact-info{
+  font-size: 15px;
+  line-height: 0;
+  padding: 14px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+
+.contact-info strong{
+  color:var(--accent1-color);
+  font-weight: 400;
+  font-size: 10px;
+  padding: 6px;
+}
+.contact-info a{
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--accent1-color);
+  padding: 6px;
+}
+
+.contact-info a:hover{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #9e9096;
+  font-style: italic;
+}
+.map{
+  border: 0;
+  width: 500px;
+  height: 300px;
+}
+/* our team section*/
+.employees{
+  background-color: #aeb3b23f;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;    
+}
+.employee-section{ 
+  margin-left: auto;
+  margin-right: auto;  
+}
+
+.employee-section h3{
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--heading-font);
+  padding: 15px;  
+}
+
+.employees figcaption{
+  text-align: center;
+  font-size: 12px;
+  width: 150px;
+  color: #000000;
+  font-weight: bold;
+  font-family: var(--body-font);
+  opacity:1;
+}
+
+.employees figcaption span{
+  font-style: italic;
+  font-size: 12px;
+}
+.employees figure img{
+  border-radius: 10px;
+  width: 120px;
+  opacity:0.9;
+}
+    /* FORM SECTION */
+form{
+  display: grid;
+  background-color: rgb(239, 235, 235);
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow:0 4px 10px  grey;
+}
+
+form h5,h3{
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  font-family: var(--heading-font);
+}
+
+.name-email{
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+ padding: 20px;
+ gap: 10px;
+}
+#username,#useremail{
+  height: 20px;
+}
+.purpose{
+ display: grid;
+ grid-template-columns:200px;
+ gap:10px;
+ align-items: center;
+ padding: 20px;
+
+}
+.subscription{
+ grid-column: 1/-1; 
+ padding: 20px;
+ 
+  
+}
+textarea{
+  grid-column: 1/-1;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+  width: 450px;
+}
+.form-button{
+ text-align: center;
+ margin: 0 auto;
+ cursor: pointer;
+ padding: 10px;
+ margin-bottom: 10px;
+ font-size: 14px;
+ font-weight: bold;
+ font-family: var(--body-font);
+ color: white;
+ background-color: gray;
+ border-radius: 6px;
+ border: none;
+}
+.form-button:hover{
+  background-color:var(--primary-color);
+  color: gray;
+   
+}
+  
