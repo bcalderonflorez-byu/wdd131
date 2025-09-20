@@ -1,42 +1,90 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <!-- This is an HTML comment -->
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>Brian Andrés Calderón Florez | WDD 130</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Brian Calderon F</title>
   <meta name="description"
-    content="This page is our first example how to build a web page, my name is Brian Calderon Student of WDD130 Web Fundamental. Here we are learning some elements that help us to build a good web page">
-  <meta name="author" content="Brian Andres Calderon Florez">
-  <link rel="stylesheet" href="styles/styles.css">
+    content="This is the official course site for WDD 131 – Dynamic Web Fundamentals, created by Brian Calderon F. It features personal projects, weekly assignments, and curated resources focused on HTML, CSS, and JavaScript.">
+  <meta name="author" content="Brian Calderon F">
+  <link rel="stylesheet" href="styles/base.css">
+  <script src="scripts/getdates.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <header>
+    <h1><span id="course-title">WDD 131 – Dynamic Web Fundamentals - Brian Calderon F</span></h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="wwr/index.html">Rafting Website</a>
-    </nav>
+        <a href="https://www.linkedin.com/in/brian-andres-calderon-florez-9236664a" target="_blank">LinkedIn</a>
+        <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/5?lang=eng&id=p7#p7" target="_blank">Scriptures</a>
+        <a href="#" target="_blank">Final Project</a>
+        <a href="#about">About Me Section</a>
+        <a href="https://github.com/bcalderonflorez-byu/wdd131" target="_blank">GitHub Repository</a>
+        <a href="#location">Colombia Section</a> 
+     </nav>
   </header>
-  <main>
-    <h1> Brian Andrés Calderón Florez | WDD 130 </h1>
-    <img src="images/profile.jpg" alt="Hello, my name is Brian Andrés Calderón Florez" width="200">
-    <p>Hello! My name is Brian Andrés Calderón Florez and I am from Medellin, Colombia.
-      I'm 35 years old and I love software development, I currently work as a CoreOps team
-      leader in a digital bank called Nequi. I am married and I have 2 beautiful daughters which
-      I love deeply, I like to play video games that allow me to share with them and we love to
-      watch movies on weekends.</p>
-  </main>
-  <aside>
-    <h2>Colombia</h2>
-    <img src="images/colombia_flag_v2.jpg" alt="Colombia landscape">
-    <p>Colombia is a land of extremes. Through its center run the towering, snow-covered volcanoes and mountains of the
-      Andes. Tropical beaches line the north and west. And there are deserts in the north and vast grasslands, called
-      Los Llanos, in the east.</p>
-  </aside>
-  <footer>
-    <p>©2025 🌴 Brian Andrés Calderón Florez 🌴 Medellin, Colombia</p>
-  </footer>
-</body>
 
+
+  <main>
+    <h2>Brian Calderon F</h2>
+  
+    <!-- Container for two cards side by side -->
+    <div class="card-container">
+      <!-- First Card -->
+      <section class="card" id="about">
+        <h2>About Me</h2>
+        <div class="profile">
+          <img src="images/profile.jpg" alt="Photo of Brian Calderon F" width="300" height="400">
+          <p>
+            Hello! My name is Brian Andrés Calderón Florez and I am from Medellin, Colombia. I'm 35 years old and I love software development, 
+            I currently work as a CoreOps team leader in a digital bank called Nequi. I am married and I have 2 beautiful daughters which 
+            I love deeply, I like to play video games that allow me to share with them and we love to watch movies on weekends.
+          </p>
+        </div>
+        <h3 id="location">COLOMBIA</h3>
+        <div class="location">
+          <div class="location-text">
+            <p>
+              Colombia is a land of extremes. Imposing volcanoes and snow-capped mountains of the Andes stretch across its center. 
+              Tropical beaches line the north and west. And there are deserts in the north and vast grasslands, called Los Llanos, in the east.           
+            </p>
+            <p>
+              One of the wonderful things about Colombia is the food. The typical food you can find in Colombia will make your taste buds 
+              tingle with unparalleled flavors.
+            </p>
+          </div>
+          <div class="location-image">
+            <img src="images/colombia_flag_v2.jpg" alt="Colombia Flag" width="300"
+              height="200">
+          </div>
+        </div>
+      </section>
+  
+        <!--(Main Item 3) - Web Dev Resources Card Container -->
+        <section class="card">
+            <!--(Card Item 1) - Web Dev Resources Header Container -->
+            <h2>Web Dev Resources</h2>
+            <!--(Card Item 2) - Web Dev Resources Content Container -->
+            <ul>
+                <li><a href="https://dev.to/" target="_blank">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/" target="_blank">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/" target="_blank">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/" target="_blank">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/" target="_blank">Udemy</a></li>
+                <li><a href="https://placehold.co" target="_blank">Image Placeholder</a></li>
+            </ul>
+        </section>
+    </div>
+  </main>
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Brian Calderon F,🌴 Medellin Colombia 🌴</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
 </html>
