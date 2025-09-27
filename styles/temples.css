@@ -29,6 +29,10 @@ main h1{
     text-align: center;
 }
 
+main h2{
+    text-align: center;
+}
+
 nav{
     display: none;
     flex-direction: column;
