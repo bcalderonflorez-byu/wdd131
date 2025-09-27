@@ -80,7 +80,7 @@ figure {
 }
 
 footer {
-    background-color: #003366;
+    background-color: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
