@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --primary-color: #1a426d;
+    --secondary-color: #467291;
+    --accent-color:  #bcc1c9;
+    --secondary-color: #ffbc8f;
+    --background-color: #f4f4f4;
+    --text-color: #000000;
+    --heading-font: "Montserrat";
+    --body-font: "Libertinus Sans ";
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    min-width: 330px;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* HEADER */
+header {
+    background: var(--primary-color);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    position: relative;
+}
+header h1 {
+    margin-bottom: 2.5rem;    
+    font-weight: 700;
+}
+header hr {
+    position: absolute;
+    bottom: 0;
+    border: none;
+    height: 1rem;
+    width: 100%;
+    background-color: var(--accent-color);
+}
+
+
+/* -----------------------MAIN------------------------- */
+
+/* PICTURE */
+.hero-image {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    background-color: var(--primary-color);
+}
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    margin: 0;
+}
+
+
+
+/* DATA SECTION */
+.data {
+    margin: 1rem auto;
+    list-style: none;
+    text-align: center;
+    border-bottom: 1px solid #f4f4f4;
+    position: relative;
+}
+.data-grid {
+    margin: 0 auto;
+    list-style: none;
+    padding: 1rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    font-size: 0.8rem;
+}
+.data-grid li {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: baseline;
+    gap: 0.5em;
+    text-align: left;
+}
+.data-grid li strong {
+    min-width: 8em;
+    /* Adjust as needed for label width */
+    text-align: right;
+    padding-right: 0.3em;
+}
+
+
+
+/* WEATHER SECTION */
+.weather {
+    margin: 1rem auto;
+    list-style: none;
+    text-align: center;
+    position: relative;
+}
+.weather-info {
+    margin: 0 auto;
+    list-style: none;
+    padding: 1rem;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3em;
+    font-size: 0.8rem;
+}
+
+.weather-info li {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: baseline;
+    gap: 0.5em;
+    text-align: left;
+}
+
+.weather-info li strong {
+    min-width: 8em;
+    /* Adjust as needed for label width */
+    text-align: right;
+    padding-right: 0.3em;
+}
+
+
+
+
+/* FOOTER */
+footer {
+    background: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1.2rem 1.5rem 0.7rem 1.5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+    letter-spacing: 0.5px;
+    box-shadow: 0 -2px 4px var(--accent);
+}
+footer p {
+    margin: 0.2rem 0;
+}
+footer .accent {
+    color: var(--secondary-color);
+}
+#lastModified {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+    margin-top: 0.3rem;
+}
+
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (min-width: 730px) {
+    main {
+        height: 80vh;
+    }
+    .hero-image img {
+        height: 85vh;
+    }
+
+    .data, .weather {
+        opacity: 0.85;
+    }
+
+    .section-title {
+        text-align: left;
+        background-color: var(--secondary-color);
+        position: absolute;
+        color: white;
+        top: 0.5rem;
+        z-index: 3;
+        padding: 5px 1.5rem 0 1.5rem;
+        left: -1.5rem;
+        width: 90%;
+        color: var(--text-color);
+    }
+    .weather-large-icon h2::after {
+        content: "🌤️"; /* Use any weather emoji you like */
+        margin-left: 1em;
+        font-size: 1.2em;
+        vertical-align: middle;
+    }
+
+    .data 
+    {
+        position: absolute;
+        width: 25%;
+        top: 15%;
+        background-color: white;
+        left: 5%;
+        min-width: 245px;
+        padding-top: 50px;
+    }
+
+    .weather {
+        position: absolute;
+        width: 25%;
+        bottom: 5%;
+        background-color: white;
+        right: 5%;
+        min-width: 245px;
+        padding-top: 60px;
+    }
+    #weather-icon {
+        display: none;
+    }
+
+
+}
