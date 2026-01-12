@@ -4,7 +4,7 @@
   --secondary: #1a426d;
   --card-border: #bcc1c9;
   --nav-bg: #353535;
-  --accent: #ffd600;
+  --accent: #ffffff;
   --accent1-color: #125451;
   --accent2-color: #02cd9ee8;
   --heading-font: "Montserrat";
@@ -92,6 +92,7 @@ display: block;
 color: var(--accent);
 font-size: 1.5rem;
 font-weight: 400;
+padding-top: 20px;
 }
 
 header nav { /* Styles for the nav section inside the header container [BLOCK by default]*/
