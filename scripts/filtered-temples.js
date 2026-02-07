@@ -109,7 +109,7 @@ const temples = [
   {
     templeName: "Bogotá Colombia",
     location: "Bogotá, Colombia",
-    dedicated: "1999, Aplil, 24",
+    dedicated: "1999, April, 24",
     area: 53500,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-29866-thumb.jpg"
