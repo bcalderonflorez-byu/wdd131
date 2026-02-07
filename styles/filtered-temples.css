@@ -79,7 +79,7 @@ nav.open { display: flex;}
 
 .temple-card img {
     width: 100%;
-    height: auto;
+    height: 240px;
     border-radius: 8px;
     margin-top: 0.5rem;
 }
