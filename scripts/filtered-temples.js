@@ -97,7 +97,23 @@ const temples = [
     area: 25000,
     imageUrl:
     "https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-39204-thumb.jpg"
-   }
+  },   
+  {
+    templeName: "Barranquilla Colombia",
+    location: "Barranquilla, Colombia",
+    dedicated: "2018, December, 9",
+    area: 25349,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/barranquilla-colombia-temple/barranquilla-colombia-temple-6095-thumb.jpg"
+  },  
+  {
+    templeName: "Bogotá Colombia",
+    location: "Bogotá, Colombia",
+    dedicated: "1999, Aplil, 24",
+    area: 53500,
+    imageUrl:
+    "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7742-thumb.jpg"
+  }
 ];
 
 const container = document.getElementById("temples-container");
