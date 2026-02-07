@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131: Temples – Brian Andres Calderon F</title>
+    <meta name="description"
+        content="By Brian Calderon F. It features personal projects, weekly assignments, and curated resources focused on HTML, CSS, and JavaScript.">
+    <meta name="author" content="Brian Calderon F">
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1> Temple Album </h1>
+            <button id="menu" aria-label="Toggle menu">☰</button>
+            <nav id="nav-menu">
+                <a href="#" data-filter="all">Home</a>
+                <a href="#" data-filter="Old">Old</a>
+                <a href="#" data-filter="New">New</a>
+                <a href="#" data-filter="Large">Large</a>
+                <a href="#" data-filter="Small">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <h2 id="page-title">Home</h2>
+
+        <div class = "temples-grid" id="temples-container"></div>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="currentyear"></span> Brian Calderon F,🌴 Medellin Colombia 🌴</p>
+      <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
