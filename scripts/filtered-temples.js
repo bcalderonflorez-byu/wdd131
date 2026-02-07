@@ -112,7 +112,7 @@ const temples = [
     dedicated: "1999, Aplil, 24",
     area: 53500,
     imageUrl:
-    "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-7742-thumb.jpg"
+    "https://churchofjesuschristtemples.org/assets/img/temples/bogota-colombia-temple/bogota-colombia-temple-29866-thumb.jpg"
   }
 ];
 
