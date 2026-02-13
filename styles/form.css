@@ -1,9 +1,10 @@
 /* Root Variables for Colors */
 :root {
-  --primary: #1a426d;
+  --primary: #410b46;
   --secondary: #467291;
   --heading-font: "Montserrat";
   --body-font: "Libertinus Sans ";
+  --glow: rgb(71, 16, 77);
 }
 
 
@@ -152,4 +153,32 @@ input[type="submit"]:hover {
 
 .star-rating input:checked ~ label:before {
   content:'\2605';
+}
+
+input[type="submit"]:hover,
+input[type="radio"]:hover,
+input[type="checkbox"]:hover, .submitAnotherReview:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: var(--glow);
+    box-shadow: 1px 4px 12px rgba(99, 59, 97, 0.773);
+    font-weight: 600;
+}
+
+.submitAnotherReview {
+    display: inline-block;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    margin-top: 1rem;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    border: none;
+    transition: 0.3s ease;
+}
+.submitAnotherReview a {
+    color: white;
+    text-decoration: none;
 }
