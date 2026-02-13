@@ -1,0 +1,98 @@
+/* Root Variables for Colors */
+:root {
+  --primary: #1a426d;
+  --secondary: #467291;
+  --heading-font: "Montserrat";
+  --body-font: "Libertinus Sans ";
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header{
+    background-color: var(--primary); 
+    color: white;
+    padding: 1rem;
+    position: relative;
+}
+header h1 {
+    text-align: center;
+    margin: 1px;
+}
+
+main h1, h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    
+}
+
+
+nav a {
+    color: white;
+    padding: 0.75rem;
+    text-decoration: none;
+    border-top: 1px  var(--secondary); ;
+}
+
+nav a:hover {
+    background-color: #0059b3
+}
+
+nav.open { display: flex;}
+
+#menu {
+    background: none;
+    border: none;
+    font-size: 1.75rem;
+    color: white;
+    position:absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    
+}
+
+.plan-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing);
+}
+
+.plan-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #d2d2ba;
+    text-align: center;
+}
+
+.plan-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+figure {
+    text-align: center;
+    background-color: white;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    
+}
