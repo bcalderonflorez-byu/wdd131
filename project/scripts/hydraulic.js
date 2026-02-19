@@ -173,7 +173,7 @@ document.querySelectorAll("#nav-menu2 a").forEach(link => {
 
             case "Hight_price":
                 PageTitle.textContent = "Hight price";
-                filtered = temples.filter(t => t.Price >1000);
+                filtered = temples.filter(t => t.Price >=1000);
                 break;
         }
 
