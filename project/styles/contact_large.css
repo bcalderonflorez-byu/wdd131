@@ -1,0 +1,70 @@
+@media screen and (min-width: 968px) {
+    .header-container{
+        display: flex;
+        align-items: center;
+        padding: 0 2rem;
+        justify-content: space-between;
+        /*background-size: cover;   
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../images/Header_pic_3.webp);
+        height: 200px; */
+    }
+    main {
+        padding: 3rem;
+        font-size: 1.1rem;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+        max-width: 500px;
+        font-size: 1rem;
+    }
+    
+    .star-rating {
+        width: 200px;
+    }
+
+    input[type="submit"] {
+        font-size: 1.3rem;
+        padding: 1rem 2.5rem;
+    }
+
+        .banner {
+        background-image: url(../images/Header_pic_3.webp); /* Sets the image */
+        background-size: cover;                        /* Resizes the image to cover the entire div */
+        background-repeat: no-repeat;                  /* Prevents the image from repeating */
+        background-position: center;                   /* Centers the image within the div */
+        height: 300px;                                 /* Sets a height for the div (required if empty) */
+    }
+
+    .header-container h1{
+        margin: 0;
+    }
+
+    nav {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        
+    }
+
+    #menu {
+        display: none;
+    }
+
+    .temples-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .socialmedia a {
+        text-decoration: none;
+    }
+    .socialmedia img {
+        width: 20px;
+    }
+}
